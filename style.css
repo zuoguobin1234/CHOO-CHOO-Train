@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./src/fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("./src/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./src/fonts/OpenSans-Bold.woff2") format("woff2"),
+       url("./src/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+/*
+  style.css 注释说明：
+  - 本文件实现一个全屏水平翻页布局（每屏为 100vw），通过改变
+    `.content-box` 的 `transform: translateX(...)` 来切换页面。
+  - 左侧 `.nav-dot` 为页面指示器，`.dot` 与 `.big-dot` 控制大小与高亮。
+  - 图片采用背景图（`.partX-pic`），若需可访问性请改用 <img> + alt。
+  - 许多尺寸使用 vh/vw 保证全屏体验，但需注意移动端与小屏适配。
+*/
+
+html{
+  overflow: hidden;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
